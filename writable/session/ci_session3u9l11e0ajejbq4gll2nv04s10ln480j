@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1735077222;_ci_previous_url|s:47:"http://localhost/code/public/index.php/add-role";user_id|s:1:"1";kullaniciadi|s:9:"rostreinn";user_role|s:1:"1";isLoggedIn|b:1;error|s:134:"Bir hata oluştu: Bulk write failed due to previous MongoDB\Driver\Exception\AuthenticationException: bad auth : authentication failed";__ci_vars|a:1:{s:5:"error";s:3:"old";}

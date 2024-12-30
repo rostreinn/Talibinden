@@ -1,0 +1,368 @@
+CRITICAL - 2024-12-24 18:39:04 --> Call to undefined method App\Controllers\IndexController::render()
+in APPPATH\Controllers\IndexController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\IndexController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IndexController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-24 18:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-24 18:47:14 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\code\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\code\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `uy...', 0)
+#1 C:\xampp\htdocs\code\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `uy...')
+#2 C:\xampp\htdocs\code\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `uy...')
+#3 C:\xampp\htdocs\code\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `uy...', Array, false)
+#4 C:\xampp\htdocs\code\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\code\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\code\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\code\app\Controllers\RegisterController.php(41): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\code\system\CodeIgniter.php(919): App\Controllers\RegisterController->store()
+#9 C:\xampp\htdocs\code\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegisterController))
+#10 C:\xampp\htdocs\code\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\code\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-24 18:47:14 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `uyeler` (`kullaniciadi`, `email`, `password`, `user_role`, `created_at`, `updated_at`) VALUES (:kullaniciadi:, :email:, :password:, :user_role:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\RegisterController.php(41): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\RegisterController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegisterController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-24 18:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:50:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 18:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:27:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-24 20:39:28 --> Undefined variable: kullanici
+in APPPATH\Views\header.php on line 66.
+ 1 APPPATH\Views\header.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kullanici', 'C:\\xampp\\htdocs\\code\\app\\Views\\header.php', 66, [...])
+ 2 APPPATH\Views\profile.php(103): include('C:\\xampp\\htdocs\\code\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\code\\app\\Views\\profile.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('profile', [], true)
+ 6 APPPATH\Controllers\ProfileController.php(37): view('profile', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProfileController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-24 20:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-24 20:39:49 --> Undefined variable: kullaniciadi
+in APPPATH\Views\header.php on line 66.
+ 1 APPPATH\Views\header.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kullaniciadi', 'C:\\xampp\\htdocs\\code\\app\\Views\\header.php', 66, [...])
+ 2 APPPATH\Views\profile.php(103): include('C:\\xampp\\htdocs\\code\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\code\\app\\Views\\profile.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('profile', [], true)
+ 6 APPPATH\Controllers\ProfileController.php(37): view('profile', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProfileController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-24 20:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-24 20:40:25 --> Undefined variable: kullanici
+in APPPATH\Views\header.php on line 66.
+ 1 APPPATH\Views\header.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kullanici', 'C:\\xampp\\htdocs\\code\\app\\Views\\header.php', 66, [...])
+ 2 APPPATH\Views\profile.php(103): include('C:\\xampp\\htdocs\\code\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\code\\app\\Views\\profile.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('profile', [], true)
+ 6 APPPATH\Controllers\ProfileController.php(37): view('profile', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProfileController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-24 20:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-24 20:41:52 --> Undefined variable: kullanici
+in APPPATH\Views\header.php on line 66.
+ 1 APPPATH\Views\header.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kullanici', 'C:\\xampp\\htdocs\\code\\app\\Views\\header.php', 66, [...])
+ 2 APPPATH\Views\index.php(237): include('C:\\xampp\\htdocs\\code\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\code\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\BaseController.php(77): view('index', [...])
+ 7 APPPATH\Controllers\IndexController.php(10): App\Controllers\BaseController->render('index')
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\IndexController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IndexController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-24 20:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-24 20:41:53 --> Undefined variable: kullanici
+in APPPATH\Views\header.php on line 66.
+ 1 APPPATH\Views\header.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kullanici', 'C:\\xampp\\htdocs\\code\\app\\Views\\header.php', 66, [...])
+ 2 APPPATH\Views\blog.php(117): include('C:\\xampp\\htdocs\\code\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\code\\app\\Views\\blog.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('blog', [], true)
+ 6 APPPATH\Controllers\BlogController.php(22): view('blog', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BlogController->blog()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-24 20:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-24 20:41:56 --> Undefined variable: kullanici
+in APPPATH\Views\header.php on line 66.
+ 1 APPPATH\Views\header.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kullanici', 'C:\\xampp\\htdocs\\code\\app\\Views\\header.php', 66, [...])
+ 2 APPPATH\Views\blog.php(117): include('C:\\xampp\\htdocs\\code\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\code\\app\\Views\\blog.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('blog', [], true)
+ 6 APPPATH\Controllers\BlogController.php(22): view('blog', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BlogController->blog()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-24 20:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-24 20:41:58 --> Undefined variable: kullanici
+in APPPATH\Views\header.php on line 66.
+ 1 APPPATH\Views\header.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kullanici', 'C:\\xampp\\htdocs\\code\\app\\Views\\header.php', 66, [...])
+ 2 APPPATH\Views\index.php(237): include('C:\\xampp\\htdocs\\code\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\code\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\BaseController.php(77): view('index', [...])
+ 7 APPPATH\Controllers\IndexController.php(10): App\Controllers\BaseController->render('index')
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\IndexController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IndexController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-24 20:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-24 20:42:13 --> Illegal string offset 'username'
+in APPPATH\Views\header.php on line 66.
+ 1 APPPATH\Views\header.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'username\'', 'C:\\xampp\\htdocs\\code\\app\\Views\\header.php', 66, [...])
+ 2 APPPATH\Views\index.php(237): include('C:\\xampp\\htdocs\\code\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\code\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\BaseController.php(77): view('index', [...])
+ 7 APPPATH\Controllers\IndexController.php(10): App\Controllers\BaseController->render('index')
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\IndexController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IndexController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-24 20:42:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-24 20:42:24 --> Illegal string offset 'kullaniciadi'
+in APPPATH\Views\header.php on line 66.
+ 1 APPPATH\Views\header.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'kullaniciadi\'', 'C:\\xampp\\htdocs\\code\\app\\Views\\header.php', 66, [...])
+ 2 APPPATH\Views\index.php(237): include('C:\\xampp\\htdocs\\code\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\code\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\BaseController.php(77): view('index', [...])
+ 7 APPPATH\Controllers\IndexController.php(10): App\Controllers\BaseController->render('index')
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\IndexController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IndexController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-24 20:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-24 20:42:35 --> Illegal string offset ''
+in APPPATH\Views\header.php on line 66.
+ 1 APPPATH\Views\header.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'\'', 'C:\\xampp\\htdocs\\code\\app\\Views\\header.php', 66, [...])
+ 2 APPPATH\Views\index.php(237): include('C:\\xampp\\htdocs\\code\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\code\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\BaseController.php(77): view('index', [...])
+ 7 APPPATH\Controllers\IndexController.php(10): App\Controllers\BaseController->render('index')
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\IndexController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IndexController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-24 20:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-24 20:43:49 --> Undefined variable: blogs
+in APPPATH\Views\blog.php on line 121.
+ 1 APPPATH\Views\blog.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: blogs', 'C:\\xampp\\htdocs\\code\\app\\Views\\blog.php', 121, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\code\\app\\Views\\blog.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('blog', [], true)
+ 5 APPPATH\Controllers\BlogController.php(22): view('blog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BlogController->blog()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-24 20:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 20:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:10:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 21:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 22:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-24 22:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-24 22:39:20 --> No suitable servers found (`serverSelectionTryOnce` set): [connection refused calling hello on 'localhost:27017']
+in VENDORPATH\mongodb\mongodb\src\functions.php on line 487.
+ 1 VENDORPATH\mongodb\mongodb\src\functions.php(487): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(654): MongoDB\select_server(Object(MongoDB\Driver\Manager), [...])
+ 3 APPPATH\Models\ClusterModel.php(19): MongoDB\Collection->find()
+ 4 APPPATH\Controllers\AdminController.php(22): App\Models\ClusterModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 22:57:51 --> No suitable servers found (`serverSelectionTryOnce` set): [connection refused calling hello on 'localhost:27017']
+in VENDORPATH\mongodb\mongodb\src\functions.php on line 487.
+ 1 VENDORPATH\mongodb\mongodb\src\functions.php(487): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(654): MongoDB\select_server(Object(MongoDB\Driver\Manager), [...])
+ 3 APPPATH\Models\RoleModel.php(24): MongoDB\Collection->find()
+ 4 APPPATH\Controllers\AdminController.php(23): App\Models\RoleModel->getAllRoles()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 22:57:59 --> No suitable servers found (`serverSelectionTryOnce` set): [connection refused calling hello on 'localhost:27017']
+in VENDORPATH\mongodb\mongodb\src\functions.php on line 487.
+ 1 VENDORPATH\mongodb\mongodb\src\functions.php(487): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(654): MongoDB\select_server(Object(MongoDB\Driver\Manager), [...])
+ 3 APPPATH\Models\RoleModel.php(24): MongoDB\Collection->find()
+ 4 APPPATH\Controllers\AdminController.php(23): App\Models\RoleModel->getAllRoles()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 23:06:54 --> No suitable servers found (`serverSelectionTryOnce` set): [connection refused calling hello on 'localhost:27017']
+in VENDORPATH\mongodb\mongodb\src\functions.php on line 487.
+ 1 VENDORPATH\mongodb\mongodb\src\functions.php(487): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(654): MongoDB\select_server(Object(MongoDB\Driver\Manager), [...])
+ 3 APPPATH\Models\RoleModel.php(24): MongoDB\Collection->find()
+ 4 APPPATH\Controllers\AdminController.php(23): App\Models\RoleModel->getAllRoles()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 23:19:11 --> Invalid file: "admin/edit_user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_user.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/edit_user', [], true)
+ 3 APPPATH\Controllers\AdminController.php(44): view('admin/edit_user', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->editUser('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 23:19:34 --> Undefined variable: cluster
+in APPPATH\Views\admin\edit_user.php on line 10.
+ 1 APPPATH\Views\admin\edit_user.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: cluster', 'C:\\xampp\\htdocs\\code\\app\\Views\\admin\\edit_user.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\code\\app\\Views\\admin\\edit_user.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/edit_user', [], true)
+ 5 APPPATH\Controllers\AdminController.php(44): view('admin/edit_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->editUser('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 23:23:15 --> Call to a member function find() on null
+in APPPATH\Controllers\AdminController.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->editUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 23:28:58 --> No suitable servers found (`serverSelectionTryOnce` set): [connection refused calling hello on 'localhost:27017']
+in VENDORPATH\mongodb\mongodb\src\functions.php on line 487.
+ 1 VENDORPATH\mongodb\mongodb\src\functions.php(487): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(687): MongoDB\select_server(Object(MongoDB\Driver\Manager), [...])
+ 3 APPPATH\Models\ClusterModel.php(27): MongoDB\Collection->findOne([...])
+ 4 APPPATH\Controllers\AdminController.php(48): App\Models\ClusterModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->editUser('1')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 23:47:12 --> No suitable servers found (`serverSelectionTryOnce` set): [connection refused calling hello on 'localhost:27017']
+in VENDORPATH\mongodb\mongodb\src\functions.php on line 487.
+ 1 VENDORPATH\mongodb\mongodb\src\functions.php(487): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(687): MongoDB\select_server(Object(MongoDB\Driver\Manager), [...])
+ 3 APPPATH\Models\ClusterModel.php(27): MongoDB\Collection->findOne([...])
+ 4 APPPATH\Controllers\AdminController.php(48): App\Models\ClusterModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->editUser('1')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 23:52:09 --> include(header.php): failed to open stream: No such file or directory
+in APPPATH\Views\admin\user_list.php on line 103.
+ 1 APPPATH\Views\admin\user_list.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(header.php): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\code\\app\\Views\\admin\\user_list.php', 103, [...])
+ 2 APPPATH\Views\admin\user_list.php(103): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\code\\app\\Views\\admin\\user_list.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/user_list', [], true)
+ 6 APPPATH\Controllers\AdminController.php(27): view('admin/user_list', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 23:55:39 --> include(path/to/header.php): failed to open stream: No such file or directory
+in APPPATH\Views\admin\user_list.php on line 103.
+ 1 APPPATH\Views\admin\user_list.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(path/to/header.php): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\code\\app\\Views\\admin\\user_list.php', 103, [...])
+ 2 APPPATH\Views\admin\user_list.php(103): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\code\\app\\Views\\admin\\user_list.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/user_list', [], true)
+ 6 APPPATH\Controllers\AdminController.php(27): view('admin/user_list', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
